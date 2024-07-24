@@ -1,0 +1,74 @@
+/* General Styles */
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background: url('op.jpg') no-repeat center center fixed;
+    background-size: cover;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: flex-start;
+    height: 100vh;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+}
+
+/* Header Styles */
+header {
+    text-align: center;
+    margin: 20px 0;
+    z-index: 10; /* Ensure header is on top of the image */
+}
+
+header h1 {
+    font-size: 2.5em;
+    margin: 0;
+}
+
+header p {
+    font-size: 1.2em;
+    margin: 5px 0;
+}
+
+/* Main Poster Styles */
+main {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-grow: 1; /* Ensure the main section takes up available space */
+    position: relative; /* Position relative to allow absolute positioning of elements inside */
+}
+
+main img {
+    max-width: 100%;
+    max-height: 80vh; /* Ensure the image does not take up the entire screen */
+    height: auto;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+}
+
+/* Footer Styles */
+footer {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+    margin: 20px 0;
+    z-index: 10; /* Ensure footer is on top of the image */
+}
+
+footer a {
+    color: #00f;
+    text-decoration: none;
+    font-size: 1.2em;
+    padding: 10px 20px;
+    border: 2px solid #00f;
+    border-radius: 5px;
+    background-color: rgba(0, 0, 0, 0.5);
+    transition: background-color 0.3s, color 0.3s;
+}
+
+footer a:hover {
+    background-color: #00f;
+    color: #fff;
+    text-decoration: none;
+}
